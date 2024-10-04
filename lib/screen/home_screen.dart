@@ -11,7 +11,7 @@ class HomeScreen extends StatelessWidget {
         // Scrollable Effect
         children: [
           Container(
-            color: Colors.amber,
+            color: Colors.white,
             // EdgeInsets dimasukkan dalam padding margin dll
             // EdgeInsets = menentukan jarak tepi kanan, kiri, atas, bawah
             // simetrik horizontal atau simetrik vertical
@@ -30,9 +30,23 @@ class HomeScreen extends StatelessWidget {
                       // membuat rata kiri Start
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text('Good morning'),
-                        SizedBox(height: 5,),
-                        Text('Book Tickets'),
+                        Text(
+                          'Good morning',
+                          style: TextStyle(
+                            fontSize: 17,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 5,
+                        ),
+                        Text(
+                          'Book Tickets',
+                          style: TextStyle(
+                              fontSize: 26,
+                              fontWeight: FontWeight.bold,
+                              color: Color(0xFF3b3b3b)),
+                        ),
                       ],
                     ),
                     Container(
