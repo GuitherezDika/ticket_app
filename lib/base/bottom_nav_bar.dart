@@ -40,7 +40,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
           selectedItemColor: Colors.blueGrey,
           unselectedItemColor: const Color(0xFF526400),
           showSelectedLabels: false,
-          items: [
+          items: const [
             BottomNavigationBarItem(
                 icon: Icon(FluentSystemIcons.ic_fluent_home_add_regular),
                 activeIcon: Icon(FluentSystemIcons.ic_fluent_home_filled),
