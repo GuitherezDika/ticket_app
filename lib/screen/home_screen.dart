@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ticket_app/base/res/styles/app_styles.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -26,26 +27,20 @@ class HomeScreen extends StatelessWidget {
                   children: [
                     // pemakaian Const pada widget = widget tersebut bernilai static
                     // akan ke render 1x / no rerender ketika widget lain ada update
-                    const Column(
+                    Column(
                       // membuat rata kiri Start
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
                           'Good morning',
-                          style: TextStyle(
-                            fontSize: 17,
-                            fontWeight: FontWeight.w500,
-                          ),
+                          style: AppStyles.headLineStyle3,
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 5,
                         ),
                         Text(
                           'Book Tickets',
-                          style: TextStyle(
-                              fontSize: 26,
-                              fontWeight: FontWeight.bold,
-                              color: Color(0xFF3b3b3b)),
+                          style: AppStyles.headLineStyle1,
                         ),
                       ],
                     ),
