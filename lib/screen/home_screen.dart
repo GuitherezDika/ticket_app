@@ -1,3 +1,4 @@
+import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:ticket_app/base/res/media.dart';
 import 'package:ticket_app/base/res/styles/app_styles.dart';
@@ -9,11 +10,13 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       // appBar: ,// untuk child screen tidak perlu set AppBar
+      backgroundColor: Color(0xFFeeedf2),
       body: ListView(
         // Scrollable Effect
         children: [
+          const SizedBox(height: 40),
           Container(
-            color: Colors.white,
+            // color: Colors.white,
             // EdgeInsets dimasukkan dalam padding margin dll
             // EdgeInsets = menentukan jarak tepi kanan, kiri, atas, bawah
             // simetrik horizontal atau simetrik vertical
@@ -48,21 +51,27 @@ class HomeScreen extends StatelessWidget {
                     Container(
                       width: 50,
                       height: 50,
-                      decoration:  BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        image: const DecorationImage(
-                          image: AssetImage(AppMedia.logo)
-                        )
-                      ),
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          image: const DecorationImage(
+                              image: AssetImage(AppMedia.logo))),
                     )
                   ],
                 ),
-                const Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text('Search icon'),
-                    Text('Empty Space'),
-                  ],
+                const SizedBox(height: 25),
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: const Color(0xFFF4F6FD)),
+                  child: const Row(
+                    // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Icon(FluentSystemIcons.ic_fluent_search_regular,
+                          color: Color(0xFFBFC205)),
+                      Text('Search'),
+                    ],
+                  ),
                 )
               ],
             ),
