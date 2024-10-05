@@ -2,6 +2,7 @@ import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:ticket_app/base/res/media.dart';
 import 'package:ticket_app/base/res/styles/app_styles.dart';
+import 'package:ticket_app/base/widgets/app_double_text.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -60,7 +61,8 @@ class HomeScreen extends StatelessWidget {
                 ),
                 const SizedBox(height: 25),
                 Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       color: const Color(0xFFF4F6FD)),
@@ -72,10 +74,13 @@ class HomeScreen extends StatelessWidget {
                       Text('Search'),
                     ],
                   ),
-                )
+                ),
+                const SizedBox(height: 40),
+                const AppDoubleText(
+                    bigText: 'Upcoming Flights', smallText: 'View all')
               ],
             ),
-          )
+          ),
         ],
       ),
     );
