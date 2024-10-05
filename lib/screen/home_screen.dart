@@ -10,7 +10,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       // appBar: ,// untuk child screen tidak perlu set AppBar
-      backgroundColor: Color(0xFFeeedf2),
+      backgroundColor: AppStyles.bgColor,
       body: ListView(
         // Scrollable Effect
         children: [
